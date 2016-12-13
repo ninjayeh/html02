@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	  
+	  
+	  <title>Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+      }
+    </style>
+	  
+    </head>
+
+    <body>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+	  
+	  
+	<div id="abc">
+		<a class="waves-effect waves-light btn" onclick=f()>校門</a>
+		<a class="waves-effect waves-light btn" onclick=f1()>社管</a>
+		<a class="waves-effect waves-light btn" onclick=f2()>中興湖</a>
+		<a class="waves-effect waves-light btn" onclick=f3()>圖書館</a>
+    </div>  
+	  
+	
+	<div id="map"></div>
+	<script>  
+	function f() {
+  var a1 = {lat: 24.123751,lng: 120.675018};
+  var a2 = {lat: 24.12069,lng: 120.6733};
+  var a3 = {lat: 24.1209,lng: 120.6743};
+  var a4 = {lat: 24.11988,lng: 120.6743};
+
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 17,
+    center: a1
+  });
+  var marker = new google.maps.Marker({position: a1,map: map,title: 'Hello World!'});
+	
+}
+  
+	   </script>
+	   <script>  
+	function f1() {
+  var a1 = {lat: 24.123751,lng: 120.675018};
+  var a2 = {lat: 24.12069,lng: 120.6733};
+  var a3 = {lat: 24.1209,lng: 120.6743};
+  var a4 = {lat: 24.11988,lng: 120.6743};
+
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 17,
+    center: a2
+  });
+  var marker = new google.maps.Marker({position: a2,map: map,title: 'Hello World!'});
+	
+}
+  
+	   </script>
+	   <script>  
+	function f2() {
+  var a1 = {lat: 24.123751,lng: 120.675018};
+  var a2 = {lat: 24.12069,lng: 120.6733};
+  var a3 = {lat: 24.1209,lng: 120.6743};
+  var a4 = {lat: 24.11988,lng: 120.6743};
+
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 17,
+    center: a3
+  });
+  var marker = new google.maps.Marker({position: a3,map: map,title: 'Hello World!'});
+	
+}
+  
+	   </script>
+	   <script>  
+	function f3() {
+  var a1 = {lat: 24.123751,lng: 120.675018};
+  var a2 = {lat: 24.12069,lng: 120.6733};
+  var a3 = {lat: 24.1209,lng: 120.6743};
+  var a4 = {lat: 24.11988,lng: 120.6743};
+
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 17,
+    center: a4
+  });
+  var marker = new google.maps.Marker({position: a4,map: map,title: 'Hello World!'});
+	
+}
+  
+	   </script>
+	   
+	   <script src="https://maps.googleapis.com/maps/api/js?&callback=f"
+        async defer></script>
+		</script>
+	   
+	   <script src="https://maps.googleapis.com/maps/api/js?&callback=f1"
+        async defer></script>
+		</script>
+		<script src="https://maps.googleapis.com/maps/api/js?&callback=f2"
+        async defer></script>
+		</script>
+		<script src="https://maps.googleapis.com/maps/api/js?&callback=f3"
+        async defer></script>
+		</script>
+	   
+	  
+    </body>
+  </html>
